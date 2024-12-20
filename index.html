@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مكتبة المعرفة</title>
+    <link rel="stylecheet" href="index.css">
+    <link rel="icon" type="image/x-icon" href="WEP\Image">
+    <!--<a href="rich.html">الاب الغني الاب الفقير</a>
+    <a href="الباطن1.html">قوة عقلك الباطن1</a>
+    <a href="العادات_الذرية.html">العادات_الذرية</a>
+    <a href="Why_we_Sleep.html">Why_we_Sleep</a>
+    <a href="رحيل.html">السماح بالرحيل</a>
+    <a href="mony.html">The Psychology of Money</a>
+    <a href="محاط بالحمقى.html">محاط بالحمقى</a>-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <style>
+        /* تخطيط عام */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header, nav {
+    text-align: center;
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+
+/* الصور تتأقلم مع الشاشة */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* الشبكة لتنسيق الكتب */
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* روابط داخلية */
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* تحسين التجاوب للهواتف */
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .links a {
+        display: block;
+        padding: 10px;
+        background-color: #ddd;
+        margin: 5px 0;
+    }
+}
+
+        body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #2b6777;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header .search-bar {
+    flex: 1;
+    margin: 0 20px;
+    display: flex;
+}
+
+header .search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+}
+
+header .search-bar button {
+    padding: 10px;
+    background-color: #52ab98;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+header .links a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+  /* Media Queries لجعل الصفحة متجاوبة */
+  @media (max-width: 1200px) {
+    .book {
+        width: calc(33.33% - 20px); /* تقليل الحجم للشاشات المتوسطة */
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .book {
+        width: calc(50% - 20px); /* نصف الشاشة للأجهزة اللوحية */
+    }
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .book {
+        width: 100%; /* عرض كامل للهواتف المحمولة */
+    }
+}
+nav {
+    background-color: #d3e0ea;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2b6777;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.book {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: calc(20% - 20px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.book:hover {
+    transform: scale(1.05);
+}
+
+.book img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.book .details {
+    padding: 15px;
+}
+
+.book .details h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.book .details p {
+    color: #555;
+    font-size: 14px;
+    margin: 0 0 10px;
+}
+
+.book .details a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2b6777;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.book .details a:hover {
+    background-color: #52ab98;
+}
+  /* التنسيق العام */
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #2b6777;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header .search-bar {
+    flex: 1;
+    margin: 0 20px;
+    display: flex;
+}
+
+header .search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+}
+
+header .search-bar button {
+    padding: 10px;
+    background-color: #52ab98;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+/* قائمة الكتب */
+main {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.book {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: calc(20% - 20px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.book img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.book .details {
+    padding: 10px;
+}
+
+.book h3 {
+    font-size: 16px;
+}
+
+/* إخفاء الكتب غير المطابقة */
+.hidden {
+    display: none;
+}
+h1 {
+    font-size: 2rem; /* الخط يتكيف مع حجم الشاشة */
+}
+
+p {
+    font-size: 1rem;
+}
+
+    </style>
+
+    <header>
+            <div class="logo">مكتبة المعرفة</div>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="ابحث عن كتاب...">
+                <button onclick="searchBooks()">بحث</button>
+            </div>
+        <div class="links">
+            <a href="Login_page.html" target="_self">تسجيل الدخول</a>
+            <a href="Sign_Up.html" target="_self">إنشاء حساب</a>
+        </div>
+    </header>
+
+    <nav>
+        <a href="index.html#">الرئيسية</a>
+        <a href="%D8%B9%D9%86_%D8%A7%D9%84%D9%85%D9%88%D9%82%D8%B9.html">عن الموقع</a>
+    </nav>
+
+    <main>
+        <div class="book">
+            <img src="77777.webp" alt="كتاب 1">
+            <div class="details">
+                <h3>لماذا ننام</h3>
+                <p>وصف مختصر للكتاب</p>
+                <a href="Why_we_Sleep.html" target="_self">قراءة المزيد</a>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="العادات_الذرية.webp" alt="كتاب 2">
+            <div class="details">
+                <h3>العادات الذرية</h3>
+                <p>وصف مختصر للكتاب</p>
+                <a href="%D8%A7%D9%84%D8%B9%D8%A7%D8%AF%D8%A7%D8%AA_%D8%A7%D9%84%D8%B0%D8%B1%D9%8A%D8%A9.html">قراءة المزيد</a>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="الباطن.jpg" alt="كتاب 3">
+            <div class="details">
+                <h3>قوة عقلك الباطن</h3>
+                <p>وصف مختصر للكتاب</p>
+                <a href="%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%861.html">قراءة المزيد</a>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="rich dad.webp" alt="كتاب 4">
+            <div class="details">
+                <h3>الاب الغني الاب الفقير</h3>
+                <p>وصف مختصر للكتاب</p>
+                <a href="rich.html">قراءة المزيد</a>
+            </div>
+        </div>
+        <br>
+        <div class="book">
+            <img src="mo.webp" alt="كتاب 5">
+            <div class="details">
+                <h3>محاط بالحمقى</h3>
+                <p>وصف مختصر للكتاب</p>
+                <a href="%D9%85%D8%AD%D8%A7%D8%B7%20%D8%A8%D8%A7%D9%84%D8%AD%D9%85%D9%82%D9%89.html">قراءة المزيد</a>
+            </div>
+        </div>
+        <div class="book">
+            <img src="48.jpg" alt="كتاب 6">
+            <div class="details">
+                <h3>48 قـــانـون للـقـــوة</h3>
+                <p>وصف مختصر للكتاب</p>
+                <a href="48power.html">قراءة المزيد</a>
+            </div>
+        </div>
+        <div class="book">
+            <img src="d706669aa916cd88116f970dde3995b2.jpg.webp" alt="كتاب7  ">
+            <div class="details">
+                <h3>The Psychology of Money</h3>
+                <p>وصف مختصر للكتاب</p>
+                <a href="mony.html">قراءة المزيد</a>
+            </div>
+        </div>
+        <div class="book">
+            <img src="رحيل.webp" alt="كتاب8  ">
+            <div class="details">
+                <h3>السماح بالرحيل</h3>
+                <p>وصف مختصر للكتاب</p>
+                <a href="%D8%B1%D8%AD%D9%8A%D9%84.html">قراءة المزيد</a>
+            </div>
+        </div>
+        <script>
+            function searchBooks() {
+    const searchTerm = document.getElementById("searchInput").value.toLowerCase();
+    const books = document.querySelectorAll('.book');
+
+    books.forEach(book => {
+        const title = book.querySelector("h3").innerText.toLowerCase();
+        if (title.includes(searchTerm)) {
+            book.classList.remove('hidden');
+        } else {
+            book.classList.add('hidden');
+        }
+    });
+}
+        </script>
+        
+
+    </main>
+</body>
+</html>
+
+
+
+
